@@ -28,6 +28,10 @@ li, button, label, input, p {
     font-size: 2rem;
 }
 
+ul{
+    list-style: none;
+}
+
 h2{
     font-size: 4.8rem;
 }
@@ -156,12 +160,13 @@ Locations
 
 .moving-cloud1{
     animation: cloudAnimation 3s infinite alternate ease-in-out;
+    opacity: 0.6;
 }
 
 .moving-cloud2{
     top: 20%;
     z-index: -1;
-    opacity: 0.4;
+    opacity: 0.2;
     animation: cloudAnimation 3.5s infinite alternate ease-in-out;
 }
 
@@ -218,11 +223,89 @@ Benefits
 }
 
 .card h4{
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .card p{
     padding: 1rem;
+}
+
+/* 
+===============================
+Contact
+===============================
+*/
+
+#contact{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),url(./img/contact-mountain.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact__wrapper{
+    background: rgba(19, 28, 39, 0.8);
+    width: 60%;
+    color: white;
+    border-radius: 2rem;
+}
+
+.contact__title{
+    padding: 4rem;
+}
+
+.name__contact,
+.email__contact{
+    padding: 3rem;
+    text-align: center;
+}
+
+.contact__wrapper label{
+    margin: 0 3rem;
+}
+
+.contact__btn{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+}
+
+.contact__wrapper input{
+    padding: 1rem 3rem;
+    width: 100%;
+}
+
+/* 
+===============================
+Footer
+===============================
+*/
+
+footer{
+    color: white;
+    background: rgba(19, 28, 39, 1);
+}
+
+.footer__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 10vh;
+}
+
+.footer__links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__link{
+    margin: 2rem;
 }
 
 /* 
@@ -240,11 +323,13 @@ Media Queries
         padding: 2rem;
     }
     .cloud{
-        
         pointer-events: none;
     }
+    .moving-cloud1{
+        top: 1%;
+    }
     .moving-cloud2{
-        top: 15%;
+        top: 5%;
     }
    
 }
