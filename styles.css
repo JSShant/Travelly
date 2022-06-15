@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pattaya&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 /* 
 ===============================
 GLOBAL STYLES
 ===============================
 */
+
 
 *{
     margin: 0;
@@ -10,6 +12,121 @@ GLOBAL STYLES
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 html {
     font-size: 62.5%;
 }
+
+h1{
+    font-size: 2.6rem;
+}
+
+li, button, label, input, p {
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+h4,h5 {
+    font-size: 2.8rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+/* 
+===============================
+NAVBAR / HERO
+===============================
+*/
+
+.navbar{
+    background: #131c27;
+    color: white;
+}
+
+.nav__wrapper{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav__list{
+    display: flex;
+    list-style: none;
+    flex:1 1 40rem;
+    justify-content: space-around;
+}
+
+.nav__header{
+    flex:2 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+}
+
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),url("./img/landing-page.jpg");
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__info{
+    padding: 5rem;
+}
+
+
+/* 
+===============================
+Media Queries
+===============================
+*/
+
+@media screen and (max-width:932px) {
+    html{
+        font-size: 50%;
+    }
+    
+    .nav__header{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:744px) {
+    .nav__wrapper{
+        text-align: center;
+    }
+}
+
